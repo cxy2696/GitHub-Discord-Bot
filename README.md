@@ -40,7 +40,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Note: Gemini 1.5 Flash is free for light use (up to 1,500 requests/day), but check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
-Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the script.
+Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the python script.
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 
