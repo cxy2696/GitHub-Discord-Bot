@@ -1,4 +1,4 @@
-aiohttp==3.13.2
+aiohttp[speedups]==3.13.2
 certifi==2025.11.12
 discord.py==2.6.4
 pygithub==2.8.1
