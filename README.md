@@ -40,7 +40,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Note: Gemini 1.5 Flash is free for light use (up to 1,500 requests/day), but check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
-''Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)''
+``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)``
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 
@@ -51,16 +51,16 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 
 
 ## Clone the Repo:
-'''
+```
 git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
 cd GitHub-Discord-Bot
-'''
+```
 
 ## Install Dependencies: 
 You'll need Python 3.12+ and the libraries
-'''
+```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install discord.py pygithub aiohttp certifi sqlite3
-'''
+```
 
