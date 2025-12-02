@@ -30,6 +30,13 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Why personal? Discord tokens are tied to your account; sharing violates terms and risks bans.
 - Free; no costs.
 
+- *If want to save time*: Here is the [Example Bot Installation](https://discord.com/oauth2/authorize?client_id=1427839495516061786)
+```Example Bot Token
+DISCORD_BOT_TOKEN = 'MTQyNzgzOTQ5NTUxNjA2MTc4Ng.GubREu.FevuKRpF87I9EpOePB8Gfh4DfKN8Z8ZeFduiZw'
+```
+ 
+- *For your own Bot Token*: Install the discord bot through the Install Link from [Installation Page](https://discord.com/developers/applications/1427839495516061786/installation)
+
 ### GitHub Personal Access Token:
 - Log into GitHub, go to Settings > Developer settings > Personal access tokens > Tokens (classic).
 - Generate a new token with scopes: repo (full access for commits/issues/PRs), read:user (for user data).
@@ -43,9 +50,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Note: Check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
-Install the discord bot through the Install Link from [Installation Page](https://discord.com/developers/applications/1427839495516061786/installation)
 
-Here is the [Example Bot Installation](https://discord.com/oauth2/authorize?client_id=1427839495516061786)
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 
