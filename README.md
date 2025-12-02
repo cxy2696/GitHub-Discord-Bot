@@ -11,14 +11,14 @@ Key Features:
 - **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`
 
 Create a `.env` file in the root:
-'''
+```
 GEMINI_API_KEY=your_gemini_key_here
 GITHUB_TOKEN=your_github_token_here
 DISCORD_BOT_TOKEN=your_discord_token_here
-'''
+```
 
 ## Obtain API Keys
-### Discord Bot Token:
+### Discord Bot:
 - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 - Create a new application, name it (e.g., "GitHubDiscordBot").
 - In the "Bot" tab, add a bot and copy the token.
@@ -35,7 +35,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Free; GitHub provides 5,000 requests/hour per token.
 
 ### Gemini API Key (for AI challenges and sentiment analysis):
-- Go to [Google AI Studio]([formerly MakerSuite](https://aistudio.google.com/api-keys).
+- Go to [Google AI Studio](https://aistudio.google.com/api-keys).
 - Sign in with a Google account, create a new project, and generate an API key.
 - Note: Gemini 1.5 Flash is free for light use (up to 1,500 requests/day), but check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
@@ -49,18 +49,26 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - GITHUB_TOKEN=your_github_token
 - DISCORD_BOT_TOKEN=your_discord_token
 
-
-## Clone the Repo:
-```
+## Installation
+```bash
 git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
 cd GitHub-Discord-Bot
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python bot.py
 ```
 
-## Install Dependencies: 
-You'll need Python 3.12+ and the libraries
-```
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install discord.py pygithub aiohttp certifi sqlite3
+## Usage
+- Set repo: !set_repo owner/repo
+- Link GitHub: !link_github username
+- Challenge: !my_challenge
+- Leaderboard: !leaderboard
+- Sentiment: !sentiment <message_id>
+
+```MIT License
+Copyright (c) 2025 Xinyi Cui
+
+Permission is hereby granted, free of charge
 ```
 
