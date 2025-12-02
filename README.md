@@ -54,7 +54,6 @@ cd GitHub-Discord-Bot
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-python bot.py
 ```
 
 Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the python script in the terminal:
