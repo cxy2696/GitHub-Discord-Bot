@@ -40,7 +40,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 ### Gemini API Key (for AI challenges and sentiment analysis):
 - Go to [Google AI Studio](https://aistudio.google.com/api-keys).
 - Sign in with a Google account, create a new project, and generate an API key.
-- Note: Gemini 1.5 Flash is free for light use (up to 1,500 requests/day), but check pricing for heavier loads.
+- Note: Check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
 Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the python script.
