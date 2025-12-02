@@ -45,6 +45,8 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 
 Install the discord bot through the Install Link from [Installation Page](https://discord.com/developers/applications/1427839495516061786/installation)
 
+Here is the [Example Bot Installation](https://discord.com/oauth2/authorize?client_id=1427839495516061786)
+
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 
 ## New Terminal Installation
@@ -67,10 +69,4 @@ python bot.py
 - Challenge: !my_challenge
 - Leaderboard: !leaderboard
 - Sentiment: !sentiment <message_id>
-
-```MIT License
-Copyright (c) 2025 Xinyi Cui
-
-Permission is hereby granted, free of charge
-```
 
