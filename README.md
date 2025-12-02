@@ -44,12 +44,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 
-## Update the Code for Custom Keys
-- GEMINI_API_KEY=your_gemini_key
-- GITHUB_TOKEN=your_github_token
-- DISCORD_BOT_TOKEN=your_discord_token
-
-## Installation
+## New Terminal Installation
 ```bash
 git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
 cd GitHub-Discord-Bot
