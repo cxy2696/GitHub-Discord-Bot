@@ -10,7 +10,7 @@ Key Features:
 - **Polling**: Automatic updates every 5 minutes.
 - **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`
 
-Create a `.env` file in the root:
+In `.env` file in the root:
 ```
 GEMINI_API_KEY=your_gemini_key_here
 GITHUB_TOKEN=your_github_token_here
@@ -40,7 +40,7 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Note: Gemini 1.5 Flash is free for light use (up to 1,500 requests/day), but check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
-``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)``
+Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
 
