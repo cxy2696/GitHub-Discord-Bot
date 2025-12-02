@@ -43,9 +43,6 @@ DISCORD_BOT_TOKEN=your_discord_token_here
 - Note: Check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
-Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the python script in the terminal:
-```python bot.py```
-
 Install the discord bot through the Install Link from [Installation Page](https://discord.com/developers/applications/1427839495516061786/installation)
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
@@ -57,6 +54,11 @@ cd GitHub-Discord-Bot
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+python bot.py
+```
+
+Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the python script in the terminal:
+```
 python bot.py
 ```
 
