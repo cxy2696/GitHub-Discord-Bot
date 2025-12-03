@@ -87,12 +87,12 @@ The bot is successfully running:
 
 
 ## 3. Usage in Discord Channel (where you installed the bot):
-- Set repository: !set_repo owner/repo
-- Link GitHub: !link_github username
-- Personalized Challenge: !my_challenge
-- Display Leaderboard: !leaderboard
-- Sentiment Analysis: !sentiment <message_id>
-- Close the Client: !shutdown
+- Set repository: `!set_repo` owner/repo
+- Link GitHub: `!link_github` username
+- Personalized Challenge: `!my_challenge`
+- Display Leaderboard: `!leaderboard`
+- Sentiment Analysis: `!sentiment` message_id
+- Close the Client: `!shutdown`
 
 The testing example:
 
