@@ -31,9 +31,7 @@ DISCORD_BOT_TOKEN='your_discord_token_here'
 - Free; no costs.
 
 - *If want to save time*: Here is the [Example Bot Installation](https://discord.com/oauth2/authorize?client_id=1427839495516061786)
-```Example Bot Token
-DISCORD_BOT_TOKEN = 'MTQyNzgzOTQ5NTUxNjA2MTc4Ng.GubREu.FevuKRpF87I9EpOePB8Gfh4DfKN8Z8ZeFduiZw'
-```
+- Example Bot Token: you need to send me the request!
  
 - *For your own Bot Token*: Install the discord bot through the Install Link from [Installation Page](https://discord.com/developers/applications/1427839495516061786/installation)
 
