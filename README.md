@@ -74,8 +74,11 @@ Ensure .env file get your APIs ``Store these APIs in a .env file (never commit i
 ```
 python bot.py
 ```
+The bot is successfully running
+<img width="708" height="445" alt="image" src="https://github.com/user-attachments/assets/7e840d7b-1030-4997-8c60-405bd9053bd8" />
 
-## 3. Usage
+
+## 3. Usage in Discord Channel (where you installed the bot):
 - Set repository: !set_repo owner/repo
 - Link GitHub: !link_github username
 - Personalized Challenge: !my_challenge
@@ -83,6 +86,7 @@ python bot.py
 - Sentiment Analysis: !sentiment <message_id>
 - Close the Client: !shutdown
 
-
+The testing example:
+<img width="426" height="775" alt="image" src="https://github.com/user-attachments/assets/57605931-8c9c-451c-9b06-2927d03477ed" />
 
 
