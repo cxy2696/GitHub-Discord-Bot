@@ -17,13 +17,7 @@ https://github.com/user-attachments/assets/f07a655a-e819-476b-8b33-e9209bcaf7df
 
 
 # Setup Your Own APIs
-Copy `.env.example` to `.env` and add your keys (Gemini, GitHub, Discord—generate personally for security).
-In `.env` file in the root:
-```
-GEMINI_API_KEY='your_gemini_key_here'
-GITHUB_TOKEN='your_github_token_here'
-DISCORD_BOT_TOKEN='your_discord_token_here'
-```
+see `.env.example`. If you already have all 3 APIs, Jump to see 2. New Terminal Installation
 
 ## 1 Obtain API Keys
 ### 1.1 Discord Bot Token:
@@ -65,6 +59,14 @@ cd GitHub-Discord-Bot
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+Copy `.env.example` to `.env` and add your keys (Gemini, GitHub, Discord—generate personally for security).
+In `.env` file in the root:
+```
+GEMINI_API_KEY='your_gemini_key_here'
+GITHUB_TOKEN='your_github_token_here'
+DISCORD_BOT_TOKEN='your_discord_token_here'
 ```
 
 Ensure .env file get your APIs ``Store these APIs in a .env file (never commit it to GitHub—add to .gitignore)`` before run the python script in the terminal:
