@@ -8,7 +8,7 @@ Key Features:
 - **Sentiment Analysis**: Analyze message tone for healthy communication.
 - **Leaderboard**: Real-time ranking of top contributors.
 - **Polling**: Automatic updates every 5 minutes.
-- **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`
+- **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`, `!shutdown`
 - **Architecture**: Discord input → GitHub API fetch → Data processing → Gemini AI → Output/Leaderboard.
 
 ## Setup Your Own APIs
@@ -71,9 +71,12 @@ python bot.py
 ```
 
 ## Usage
-- Set repo: !set_repo owner/repo
+- Set repository: !set_repo owner/repo
 - Link GitHub: !link_github username
-- Challenge: !my_challenge
-- Leaderboard: !leaderboard
-- Sentiment: !sentiment <message_id>
+- Personalized Challenge: !my_challenge
+- Display Leaderboard: !leaderboard
+- Sentiment Analysis: !sentiment <message_id>
+- Close the Client: !shutdown
+
+
 
