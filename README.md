@@ -66,6 +66,7 @@ pip install -r requirements.txt
 
 Copy `.env.example` to `.env` and add your keys (Gemini, GitHub, Discord—generate personally for security).
 In `.env` file in the root:
+
 <img width="284" height="181" alt="image" src="https://github.com/user-attachments/assets/04fe8a4c-6f16-4b0b-b4a4-6be4362a33ba" />
 ```
 GEMINI_API_KEY='your_gemini_key_here'
