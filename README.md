@@ -15,9 +15,9 @@ Key Features:
 Copy `.env.example` to `.env` and add your keys (Gemini, GitHub, Discord—generate personally for security).
 In `.env` file in the root:
 ```
-GEMINI_API_KEY=your_gemini_key_here
-GITHUB_TOKEN=your_github_token_here
-DISCORD_BOT_TOKEN=your_discord_token_here
+GEMINI_API_KEY='your_gemini_key_here'
+GITHUB_TOKEN='your_github_token_here'
+DISCORD_BOT_TOKEN='your_discord_token_here'
 ```
 
 ## Obtain API Keys
