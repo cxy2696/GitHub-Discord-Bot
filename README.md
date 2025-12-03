@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/f07a655a-e819-476b-8b33-e9209bcaf7df
 
 
 
-# Setup Your Own APIs
+# Step-By-Step Setup Your Own APIs
 see `.env.example`. If you already have all 3 APIs, Jump to see 2. New Terminal Installation
 
 ## 1 Obtain API Keys
