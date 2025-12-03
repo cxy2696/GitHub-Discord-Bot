@@ -24,16 +24,20 @@ DISCORD_BOT_TOKEN='your_discord_token_here'
 ### Discord Bot:
 - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 - Create a new application, name it (e.g., "GitHubDiscordBot").
-- In the "Bot" tab, add a bot and copy the token.
+- In the "Bot" left tab, add a bot and copy the token.
 - Enable "Message Content" intent in the bot settings.
 - Invite the bot to your server using the OAuth2 URL generator (select bot permissions like "Send Messages" and "Read Message History").
 - Why personal? Discord tokens are tied to your account; sharing violates terms and risks bans.
 - Free; no costs.
+<img width="1801" height="883" alt="image" src="https://github.com/user-attachments/assets/3b92b134-eae1-41b1-9698-7deaea56b32f" />
+
 
 - *If want to save time*: Here is the [Example Bot Installation](https://discord.com/oauth2/authorize?client_id=1427839495516061786)
 - Example Bot Token: you need to send me the request!
  
-- *For your own Bot Token*: Install the discord bot through the Install Link from [Installation Page](https://discord.com/developers/applications/1427839495516061786/installation)
+- *For your own Bot Token*: Install the discord bot through the Install Link in the "Installation" left tab.
+- <img width="1801" height="883" alt="image" src="https://github.com/user-attachments/assets/82f4db8e-7a3e-411e-9381-5d0b550ec34b" />
+
 
 ### GitHub Personal Access Token:
 - Log into GitHub, go to Settings > Developer settings > Personal access tokens > Tokens (classic).
