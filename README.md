@@ -8,7 +8,7 @@ Key Features:
 - **Sentiment Analysis**: Analyze message tone for healthy communication.
 - **Leaderboard**: Real-time ranking of top contributors.
 - **Polling**: Automatic updates every 5 minutes.
-- **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`, `!shutdown`
+- **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`,  `!update_stats`, `!shutdown`
 - **Architecture**: Discord input → GitHub API fetch → Data processing → Gemini AI → Output/Leaderboard.
 
 # Converting your Discord to developer mode:
@@ -92,6 +92,7 @@ The bot is successfully running:
 - Personalized Challenge: `!my_challenge`
 - Display Leaderboard: `!leaderboard`
 - Sentiment Analysis: `!sentiment` message_id
+- Manual Refresh if want: `!update_stats`
 - Close the Client: `!shutdown`
 
 The testing example:
