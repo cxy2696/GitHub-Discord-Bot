@@ -1,6 +1,6 @@
 # GitHub-Discord Bot
 
-An AI-powered (gemini-2.5-flash) Discord bot to boost participation, motivation, and collaboration in remote GitHub teams using gamification.
+An AI-powered Discord bot to boost participation, motivation, and collaboration in remote GitHub teams using gamification. Default model is gemini-2.5-flash but can adjust.
 
 Key Features:
 - **Gamification**: Earn points (10/commit, 20/issue, 30/PR) and badges (Bronze/Silver/Gold Collaborator).
