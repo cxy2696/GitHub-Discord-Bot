@@ -11,7 +11,12 @@ Key Features:
 - **Commands**: `!set_repo`, `!link_github`, `!my_challenge`, `!leaderboard`, `!sentiment <message_id>`, `!shutdown`
 - **Architecture**: Discord input → GitHub API fetch → Data processing → Gemini AI → Output/Leaderboard.
 
-## Setup Your Own APIs
+# Converting your Discord to developer mode:
+https://github.com/user-attachments/assets/f07a655a-e819-476b-8b33-e9209bcaf7df
+
+
+
+# Setup Your Own APIs
 Copy `.env.example` to `.env` and add your keys (Gemini, GitHub, Discord—generate personally for security).
 In `.env` file in the root:
 ```
@@ -20,8 +25,8 @@ GITHUB_TOKEN='your_github_token_here'
 DISCORD_BOT_TOKEN='your_discord_token_here'
 ```
 
-## Obtain API Keys
-### Discord Bot:
+## 1 Obtain API Keys
+### 1.1 Discord Bot Token:
 - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 - Create a new application, name it (e.g., "GitHubDiscordBot").
 - In the "Bot" left tab, add a bot and copy the token.
@@ -39,24 +44,21 @@ DISCORD_BOT_TOKEN='your_discord_token_here'
 - <img width="1801" height="883" alt="image" src="https://github.com/user-attachments/assets/82f4db8e-7a3e-411e-9381-5d0b550ec34b" />
 
 
-### GitHub Personal Access Token:
+### 1.2 GitHub Personal Access Token:
 - Log into GitHub, go to Settings > Developer settings > Personal access tokens > Tokens (classic).
 - Generate a new token with scopes: repo (full access for commits/issues/PRs), read:user (for user data).
 - Copy the token (it starts with ghp_ or github_pat_).
 - Why personal? Allows access to private repos if needed; shared tokens can hit rate limits quickly.
 - Free; GitHub provides 5,000 requests/hour per token.
 
-### Gemini API Key (for AI challenges and sentiment analysis):
+### 1.3 Gemini API Key (for AI challenges and sentiment analysis):
 - Go to [Google AI Studio](https://aistudio.google.com/api-keys).
 - Sign in with a Google account, create a new project, and generate an API key.
 - Note: Check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
-
-
+## 2. New Terminal Installation
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
-
-## New Terminal Installation
 ```bash
 git clone https://github.com/cxy2696/GitHub-Discord-Bot.git
 cd GitHub-Discord-Bot
@@ -70,13 +72,14 @@ Ensure .env file get your APIs ``Store these APIs in a .env file (never commit i
 python bot.py
 ```
 
-## Usage
+## 3. Usage
 - Set repository: !set_repo owner/repo
 - Link GitHub: !link_github username
 - Personalized Challenge: !my_challenge
 - Display Leaderboard: !leaderboard
 - Sentiment Analysis: !sentiment <message_id>
 - Close the Client: !shutdown
+
 
 
 
