@@ -48,6 +48,8 @@ see `.env.example`. If you already have all 3 APIs, Jump to see 2. New Terminal 
 - Why personal? Allows access to private repos if needed; shared tokens can hit rate limits quickly.
 - Free; GitHub provides 5,000 requests/hour per token.
 
+https://github.com/user-attachments/assets/44258480-6591-4abb-9a80-b0f113b48b1a
+
 ### 1.3 Gemini API Key (for AI challenges and sentiment analysis):
 - Go to [Google AI Studio](https://aistudio.google.com/api-keys).
 - Sign in with a Google account, create a new project, and generate an API key.
