@@ -253,14 +253,14 @@ class GamifiedGitHubDiscordBot(commands.Bot):
             logger.info("Manually updated stats")
 
         @self.command(name='shutdown')
-        @commands.has_permissions(administrator=True)
         async def shutdown(ctx):
             try:
                 await ctx.send("Shutting down the bot...")
                 logger.info(f"Shutdown initiated by {ctx.author.name}")
                 await self.close()
-            except commands.MissingPermissions:
-                await ctx.send("You don't have permission to shut me down!")
+            except Exception as e:
+                await ctx.send(f"Error during shutdown: {str(e)}")
+                logger.error(f"Shutdown error: {str(e)}")
 
 
     async def on_message(self, message):
