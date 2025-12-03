@@ -12,6 +12,7 @@ Key Features:
 - **Architecture**: Discord input → GitHub API fetch → Data processing → Gemini AI → Output/Leaderboard.
 
 # Converting your Discord to developer mode:
+
 https://github.com/user-attachments/assets/f07a655a-e819-476b-8b33-e9209bcaf7df
 
 
@@ -28,6 +29,7 @@ see `.env.example`. If you already have all 3 APIs, Jump to see 2. New Terminal 
 - Invite the bot to your server using the OAuth2 URL generator (select bot permissions like "Send Messages" and "Read Message History").
 - Why personal? Discord tokens are tied to your account; sharing violates terms and risks bans.
 - Free; no costs.
+
 <img width="1801" height="883" alt="image" src="https://github.com/user-attachments/assets/3b92b134-eae1-41b1-9698-7deaea56b32f" />
 
 
@@ -35,7 +37,8 @@ see `.env.example`. If you already have all 3 APIs, Jump to see 2. New Terminal 
 - Example Bot Token: you need to send me the request!
  
 - *For your own Bot Token*: Install the discord bot through the Install Link in the "Installation" left tab.
-- <img width="1801" height="883" alt="image" src="https://github.com/user-attachments/assets/82f4db8e-7a3e-411e-9381-5d0b550ec34b" />
+
+<img width="1801" height="883" alt="image" src="https://github.com/user-attachments/assets/82f4db8e-7a3e-411e-9381-5d0b550ec34b" />
 
 
 ### 1.2 GitHub Personal Access Token:
@@ -74,7 +77,8 @@ Ensure .env file get your APIs ``Store these APIs in a .env file (never commit i
 ```
 python bot.py
 ```
-The bot is successfully running
+The bot is successfully running:
+
 <img width="708" height="445" alt="image" src="https://github.com/user-attachments/assets/7e840d7b-1030-4997-8c60-405bd9053bd8" />
 
 
@@ -87,6 +91,7 @@ The bot is successfully running
 - Close the Client: !shutdown
 
 The testing example:
+
 <img width="426" height="775" alt="image" src="https://github.com/user-attachments/assets/57605931-8c9c-451c-9b06-2927d03477ed" />
 
 
