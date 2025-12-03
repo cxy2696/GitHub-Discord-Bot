@@ -3,7 +3,7 @@
 An AI-powered Discord bot to boost participation, motivation, and collaboration in remote GitHub teams using gamification. Default model is gemini-2.5-flash but can adjust.
 
 Key Features:
-- **Gamification**: Earn points (10/commit, 20/issue, 30/PR) and badges (Bronze/Silver/Gold Collaborator).
+- **Gamification**: Earn points (10/commit, 20/issue, 30/PR) and badges (when points > 100/500/1000 → Bronze/Silver/Gold Collaborator).
 - **AI Challenges**: Personalized suggestions like "Review one PR to share your expertise" via Gemini AI.
 - **Sentiment Analysis**: Analyze message tone for healthy communication.
 - **Leaderboard**: Real-time ranking of top contributors.
