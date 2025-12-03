@@ -15,11 +15,6 @@ from itertools import islice
 import concurrent.futures  # For executor
 from dotenv import load_dotenv  # For loading .env files
 
-'''
-example Bot Installation: 
-https://discord.com/oauth2/authorize?client_id=1427839495516061786
-'''
-
 # Load environment variables from .env file
 load_dotenv()
 
@@ -55,6 +50,14 @@ class GamifiedGitHubDiscordBot(commands.Bot):
         self.init_db()
         self.user_data = self.load_user_data()
         self.last_global_check = datetime.now(timezone.utc) - timedelta(days=30)
+        self.gemini_model = 'gemini-2.5-flash'  # Default model (fast, cost-efficient)
+        self.allowed_gemini_models = [
+            'gemini-2.5-flash', 'gemini-2.5-flash-preview-09-2025',  # Fast models
+            'gemini-2.5-pro', 'gemini-2.5-pro-preview-tts',  # Advanced reasoning
+            'gemini-2.5-flash-lite', 'gemini-2.5-flash-lite-preview-09-2025',  # Lite variants
+            'gemini-3-pro-preview', 'gemini-3-pro-image-preview',  # Latest 3.0 series (Nov 2025)
+            'gemini-2.0-flash', 'gemini-2.0-flash-lite'
+        ]
         self.add_commands()
         self.validate_environment()
         self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=50)  # For sync tasks
@@ -262,6 +265,20 @@ class GamifiedGitHubDiscordBot(commands.Bot):
                 await ctx.send(f"Error during shutdown: {str(e)}")
                 logger.error(f"Shutdown error: {str(e)}")
 
+        @self.command(name='set_gemini_model')
+        async def set_gemini_model(ctx, model_name: str):
+            if model_name in self.allowed_gemini_models:
+                self.gemini_model = model_name
+                await ctx.send(f"Gemini model updated to '{model_name}' successfully!")
+                logger.info(f"Gemini model set to '{model_name}' by {ctx.author.name}")
+            else:
+                await ctx.send(f"Invalid model '{model_name}'. Available: {', '.join(self.allowed_gemini_models[:5])}... (use !list_gemini_models for full list).")
+                logger.warning(f"Invalid Gemini model attempt: '{model_name}' by {ctx.author.name}")
+
+        @self.command(name='list_gemini_models')
+        async def list_gemini_models(ctx):
+            models_list = "\n".join(self.allowed_gemini_models)
+            await ctx.send(f"Available Gemini models:\n{models_list}")
 
     async def on_message(self, message):
         if message.author == self.user:
@@ -334,7 +351,10 @@ class GamifiedGitHubDiscordBot(commands.Bot):
         return await self.call_gemini(prompt)
 
     async def call_gemini(self, prompt):
-        url = f"https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+        if self.gemini_model not in self.allowed_gemini_models:
+            logger.warning(f"Invalid Gemini model '{self.gemini_model}' - falling back to default.")
+            self.gemini_model = 'gemini-2.5-flash'
+        url = f"https://generativelanguage.googleapis.com/v1/models/{self.gemini_model}:generateContent?key={GEMINI_API_KEY}"
         data = {"contents": [{"parts": [{"text": prompt}]}]}
         headers = {'Content-Type': 'application/json'}
         ssl_context = ssl.create_default_context(cafile=certifi.where())
@@ -386,8 +406,4 @@ async def main():
         print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
-    try:
-        loop = asyncio.get_running_loop()
-        loop.create_task(main())
-    except RuntimeError:
-        asyncio.run(main())
+    asyncio.run(main())
