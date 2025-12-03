@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/44258480-6591-4abb-9a80-b0f113b48b1a
 
 ### 1.3 Gemini API Key (for AI challenges and sentiment analysis):
 - Go to [Google AI Studio](https://aistudio.google.com/api-keys).
-- Sign in with a Google account, create a new project, and generate an API key.
+- Sign in with a Google account (recommend your personal account since your organizational accounts might be blocked to use Google AI Studio), create a new project, and generate an API key.
 - Note: Check pricing for heavier loads.
 - Start with the free tier; upgrade to paid for more quota.
 
