@@ -1,5 +1,7 @@
 # GitHub-Discord Bot
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 An AI-powered Discord bot to boost participation, motivation, and collaboration in remote GitHub teams using gamification. Default model is gemini-2.5-flash but can adjust.
 
 Key Features:
